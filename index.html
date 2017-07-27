@@ -1,0 +1,189 @@
+<html>
+<head>
+	<title>SIGNATURE</title>
+	<style>
+body {
+	font-family: Arial;
+	background-image: url("back03.JPG");
+	background-color: #b1b9be;
+}
+.central {
+	margin-left: auto;
+	margin-right: auto;
+}
+#holdsTitle, #holdsLogo {
+	text-align: center;
+}
+.productionTitle {
+	font-weight: bold;
+}
+
+video {
+	width: 100%;
+}
+
+@media (max-width: 566px) {
+	body {
+		color: #fff;
+		background-image: url("back05.JPG");
+		background-color: #004;
+	}
+	#bar {
+		height: 10vw;
+		background-color: #010111;
+		margin-top: 6vw;
+	}
+	.master {
+		width: 95%;
+	}
+	.blackTitle, #greyDog {
+		display: none;
+	}
+	#signature {
+		font-size: 6.7vw;
+	}
+	.whiteTitle {
+		display: block;
+		width: 100%;
+	}
+	#dindin {
+		width: 40%;
+		display: block;
+	}
+	p {
+		font-size: 5vw;
+	}
+	.info {
+		margin-top: 19vw;
+	}
+
+	.media {
+		width: 100%;
+	}
+
+	.vidContainer {
+		position: relative;
+		height: 0;
+		overflow: hidden;
+		padding-bottom: 62.5%;
+		
+	}
+
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+}
+
+@media (min-width: 567px) {
+	#dindin, #bar, .whiteTitle {
+		display: none;
+	}
+	#holdsTitle {
+		height: 95px;
+	}
+	#blackHeeler {
+		padding-left: 29px;
+	}
+	#holdsLogo {
+		height: 70px;
+	}
+	#greydog {
+		height: 100%;
+	}
+	.blackTitle, #lenny, #signature {
+		display: inline-block;
+		height: 100%;
+	}
+	#signature {
+		font-size: 18px;
+		vertical-align: middle;
+	}
+	.info {
+		background-image: url("back04.JPG");
+		height: 200px;
+		margin-top: 20px;
+	}
+	.master {
+		width: 90%;
+	}
+	.infoText {
+		overflow-y: auto;
+		width: calc(100% - 340px);
+		height: 100%;
+		padding-left: 10px;
+	}
+
+	.infoText, .media {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.media {
+		width: 320px;
+	}
+}
+
+@media (min-width: 950px) {
+	#holdsTitle {
+		height: 130px;
+	}
+	#holdsLogo {
+		height: 95px;
+	}
+	#signature {
+		font-size: 23px;
+	}
+	.info {
+	//	display: inline-block;
+	//	width: 45%;
+	}
+}
+	</style>
+</head>
+<body>
+	<div class="central">
+		<div id="holdsTitle">
+			<img class="blackTitle" id="blackDark" src="logodh02_dark.png"/><!--
+			--><img class="blackTitle" id="blackHeeler" src="logodh02_heeler.png"/><!--
+			--><img class="whiteTitle" id="whiteDark" src="logodh03_dark.png"/><!--
+			--><img class="whiteTitle" id="whiteHeeler" src="logodh03_heeler.png"/>
+		</div>
+		<div id="holdsLogo">
+			<p id="signature">SIGNATURE PRODUCTIONS</p><!--
+			--><img id="greydog" src="dhpdindingrey.png"/>
+		</div>
+		<img id="dindin" class="central" src="dhpdindin.png"/>
+		<div id="bar"><br><br></div>
+	</div>
+	<br>
+	<div class="master central">
+		<div class="info">
+			<div class="media">
+				<div class="vidContainer">
+					<iframe width="320" height="180" src="https://www.youtube.com/embed/CsmGqww4qu4"></iframe>
+				</div>
+			</div>
+			<div class="infoText">
+				<p class="productionTitle">FOOD ADVENTURE<br>2014<br>Aston Rees</p>
+				<p>Letting kids learn about healthy eating choices via an interactive application. Lots of activities to do, including a hunt for the Edibles - 10 cartoon characters to be found!</p>
+			</div>
+		</div>
+		<div class="info">
+			<div class="media">
+				<div class="vidContainer">
+					<iframe width="320" height="180" src="https://www.youtube.com/embed/LCGgShKT2FY"></iframe>
+				</div>
+			</div>
+			<div class="infoText">
+				<p class="productionTitle">SLY EYES<br>2016<br>Aston Rees</p>
+				<p>A shady puzzle game in which some punk must be hunted down for stealing a candy bar from Murray's dairy. Three main tools are used to track down the punk:<br>- Watch security camera footage<br>- Make phone calls<br>- Search the streets for evidence</p>
+			</div>
+		</div>
+
+</body>
+</html>
