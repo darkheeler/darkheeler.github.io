@@ -1,0 +1,45 @@
+.scroll-horizontal {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem;
+    scroll-snap-type: x mandatory;
+}
+
+.scroll-item {
+    flex: 0 0 auto;
+    border-width: 0.5rem;
+    border-style: solid;
+    border-color: #58521b;
+}
+
+#pop-up {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+    
+    background-color: rgb(145, 149, 152);
+    z-index: 1;
+
+    display: none;
+/*
+    width: 80%;
+    max-height: 80%;
+    */
+    width: 80vh;
+    height: 100vh;
+
+    flex-direction: column;
+
+    border-width: 0.5rem;
+    border-style: solid;
+    border-color: rgb(11, 110, 110);
+    
+}
+
+#pop-up-text {
+    overflow-y: scroll;
+    flex: 1;
+}
