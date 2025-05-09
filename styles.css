@@ -13,6 +13,20 @@
     border-color: #58521b;
 }
 
+.main-text {
+    white-space: pre-wrap;
+}
+
+#collapse-test-button {
+    background-color: #6d6200;
+    color: #fff;
+}
+
+#collapsed-section {
+    background-color: #e11a81;
+    display: none;
+}
+
 #pop-up {
     position: fixed;
     top: 50%;
@@ -42,4 +56,29 @@
 #pop-up-text {
     overflow-y: scroll;
     flex: 1;
+}
+
+#topper {
+    width: 100%;
+}
+
+#quick-pose {
+    max-width: 50%;
+    display: block;
+}
+
+#titles {
+    max-width: 40%;
+    float: left;
+}
+
+#titles img {
+    max-width: 100%;
+}
+
+@media (max-width: 600px) {
+    #titles {
+        max-width: 100%;
+        float: none;
+    }
 }

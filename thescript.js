@@ -2,9 +2,28 @@ const popTrial = document.getElementById("pop-trial");
 const popUp = document.getElementById("pop-up");
 const popUpText = document.getElementById("pop-up-text");
 const closePopUp = document.getElementById("close-pop-up");
+const quickPose = document.getElementById("quick-pose");
+const collapseTestButton = document.getElementById("collapse-test-button");
+let collapsed = true;
+const collapsedSection = document.getElementById("collapsed-section");
 closePopUp.onclick = function() {
     popUp.style.display = "none";
     popUpText.textContent = "";
+}
+quickPose.onclick = function() {
+    popUp.style.display = "flex";
+    popUpText.textContent =
+`
+I bring the producer's mindset to 
+`
+}
+collapseTestButton.onclick = function() {
+    if (collapsed) {
+        collapsedSection.style.display = "block";
+    } else {
+        collapsedSection.style.display = "none";
+    }
+    collapsed = !collapsed;
 }
 let theContents = [];
 theContents.push("Mean mobile app, meant to get those thumbs going like a gambler on the pokies.");
