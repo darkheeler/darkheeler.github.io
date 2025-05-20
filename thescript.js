@@ -48,6 +48,106 @@ dataB.addSection(
         "Data on the whiteboard.", "theheeler4.png"
     )
 );
+dataB.addSection(
+    new Section(
+        "Data on the whiteboard.", "theheeler4.png"
+    )
+);
+dataB.addSection(
+    new Section(
+        "Data on the whiteboard.", "theheeler4.png"
+    )
+);
+dataB.addSection(
+    new Section(
+        "Data on the whiteboard.", "theheeler4.png"
+    )
+);
+dataB.addSection(
+    new Section(
+        "Data on the whiteboard.", "theheeler4.png"
+    )
+);
+dataB.addSection(
+    new Section(
+        "Data on the whiteboard.", "theheeler4.png"
+    )
+);
+dataB.addSection(
+    new Section(
+        "Data on the whiteboard.", "theheeler4.png"
+    )
+);
+dataB.addSection(
+    new Section(
+        "Data on the whiteboard.", "theheeler4.png"
+    )
+);
+dataB.addSection(
+    new Section(
+        "Data on the whiteboard.", "theheeler4.png"
+    )
+);
+dataB.addSection(
+    new Section(
+        "Data on the whiteboard.", "theheeler4.png"
+    )
+);
+dataB.addSection(
+    new Section(
+        "Data on the whiteboard.", "theheeler4.png"
+    )
+);
+dataB.addSection(
+    new Section(
+        "Data on the whiteboard.", "theheeler4.png"
+    )
+);
+dataB.addSection(
+    new Section(
+        "Data on the whiteboard.", "theheeler4.png"
+    )
+);
+dataB.addSection(
+    new Section(
+        "Data on the whiteboard.", "theheeler4.png"
+    )
+);
+dataB.addSection(
+    new Section(
+        "Data on the whiteboard.", "theheeler4.png"
+    )
+);
+dataB.addSection(
+    new Section(
+        "Data on the whiteboard.", "theheeler4.png"
+    )
+);
+dataB.addSection(
+    new Section(
+        "Data on the whiteboard.", "theheeler4.png"
+    )
+);
+dataB.addSection(
+    new Section(
+        "Data on the whiteboard.", "theheeler4.png"
+    )
+);
+dataB.addSection(
+    new Section(
+        "Data on the whiteboard.", "theheeler4.png"
+    )
+);
+dataB.addSection(
+    new Section(
+        "Data on the whiteboard.", "theheeler4.png"
+    )
+);
+dataB.addSection(
+    new Section(
+        "Data on the whiteboard.", "theheeler4.png"
+    )
+);
 theWorkpieces.push(dataB);
 
 const webMate = new Workpiece(
@@ -68,7 +168,8 @@ for (let i = 0; i < theWorkpieces.length; i++) {
     newWorkpieceElement.id = "workpiece" + i;
     newWorkpieceElement.className = "workpiece";
     const expandBtn = document.createElement("button");
-    expandBtn.textContent = "&#9660;";
+    expandBtn.className = "expand-button";
+    expandBtn.innerHTML = "&#9660;";
     newWorkpieceElement.appendChild(expandBtn);
     const heading = document.createElement("h1");
     heading.textContent = theContent.name;
@@ -83,9 +184,11 @@ for (let i = 0; i < theWorkpieces.length; i++) {
     let thisPieceCollapsed = true;
     expandBtn.onclick = function() {
         if (thisPieceCollapsed) {
-            workpieceCollapsed.style.display = "block";
+            workpieceCollapsed.style.display = "flex";
+            expandBtn.innerHTML = "&#9650;";
         } else {
             workpieceCollapsed.style.display = "none";
+            expandBtn.innerHTML = "&#9660;";
         }
         thisPieceCollapsed = !thisPieceCollapsed;
     }

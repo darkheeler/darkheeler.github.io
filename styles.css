@@ -1,3 +1,7 @@
+body {
+    font-family: "Trebuchet MS", Arial;
+}
+
 .scroll-horizontal {
     display: flex;
     overflow-x: auto;
@@ -17,7 +21,7 @@
     white-space: pre-wrap;
 }
 
-#collapse-test-button {
+.expand-button {
     background-color: #6d6200;
     color: #fff;
 }
@@ -27,7 +31,10 @@
 }
 
 .workpiece h1 {
+    display: inline-block;
     background-color: rgb(41, 174, 174);
+    margin-top: 1vh;
+    margin-bottom: 1.5vh;
 }
 
 .workpiece-desc {
@@ -37,9 +44,14 @@
 .workpiece-collapsed {
     background-color: rgb(147, 154, 160);
     display: none;
+    overflow-x: auto;
+    flex-direction: row;
 }
 
 .workpiece-section {
+
+    flex: 0 0 auto;
+
     background-color: rgb(131, 196, 137);
     display: inline-block;
     width: 30vh;
